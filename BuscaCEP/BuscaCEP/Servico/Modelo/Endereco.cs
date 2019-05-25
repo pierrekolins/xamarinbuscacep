@@ -34,5 +34,11 @@ UNICODE: viacep.com.br/ws/01001000/json/unicode/
         public string unidade { get; set; }
         public string ibge { get; set; }
         public string gia { get; set; }
+
+        public override string ToString()
+        {
+            return String.Format(" Dados da Pesquisa: \r\n {0} {1} {2} - {3} \r\n {4} - {5} \r\n {6}"
+                ,logradouro, complemento, bairro, cep, localidade, uf,  ibge);
+        }
     }
 }
