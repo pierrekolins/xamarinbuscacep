@@ -157,4 +157,7 @@
       <Name>BuscaCEP</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\correioslogo.png" />
+  </ItemGroup>
 </Project>

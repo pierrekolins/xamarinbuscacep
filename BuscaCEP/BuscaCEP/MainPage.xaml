@@ -4,11 +4,31 @@
              xmlns:local="clr-namespace:BuscaCEP"
              x:Class="BuscaCEP.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout BackgroundColor="#FFBF00" Padding="50">
+        
+        <Image 
+            Source="correioslogo.png" 
+            Margin="50"/>
+        
+        <Entry 
+            x:Name="entryCep"
+            HorizontalTextAlignment="Center" 
+            PlaceholderColor="#FFBF00" 
+            Placeholder="Digite o CEP" 
+            BackgroundColor="#FFFFFF"/>
+
+        <Button 
+            x:Name="btnBusca"
+            Text="Buscar CEP"
+            TextColor="#FFFFFF"
+            BackgroundColor="#00416B"
+            Margin="50"/>
+
+        <Label 
+            x:Name="lbResultado"
+            Text=""
+            HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand" />
     </StackLayout>
 
 </ContentPage>
